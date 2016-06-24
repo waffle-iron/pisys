@@ -5,5 +5,6 @@ import { LineOptions } from './line-options'
 
 export class NoteLine
 {
-
+    content: string;
+    options: LineOptions;
 }
