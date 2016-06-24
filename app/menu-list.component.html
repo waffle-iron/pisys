@@ -1,0 +1,20 @@
+<md-list>
+    <md-list-item *ngFor="let item of menuItems">
+        <div [ngSwitch]="menuType">
+            <div *ngSwitchWhen="'patient'">
+                <img md-list-avatar src="{{item.leftArea}}">
+            </div>
+            <div *ngSwitchWhen="'contact'">
+                <img md-list-avatar src="{{item.leftArea}}">
+            </div>
+            <div *ngSwitchWhen="'patient-detail'">
+                <md-icon md-list-avatar>{{item.leftArea}}</md-icon>
+            </div>
+        </div>
+        <h3 md-line>{{item.title}}</h3>
+        <div *ngIf="item.isPatient">
+            <p md-line>{{item.birthday | date: "dd.mm.yyyy"}}</p>
+            <p md-line>{{item.station}}</p>
+        </div>
+    </md-list-item>
+</md-list>
