@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/juanecabellob/pisys.png?label=ready&title=Ready)](https://waffle.io/juanecabellob/pisys)
 # patient-information-system
 
 - [ ] .travis.yml file
